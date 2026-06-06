@@ -199,13 +199,13 @@ const logDiagnostics = (cluster: string) => {
                   <div className="flex items-center justify-between pt-1 text-[9px] font-mono text-zinc-600">
                     <span>{note.updatedAt}</span>
 
-                    <button
+                    {/* <button
                       onClick={(e) => handleDeleteNote(note.id, e)}
                       className="opacity-0 group-hover:opacity-100 p-0.5 text-zinc-600 hover:text-rose-400 cursor-pointer"
                       title="Delete Note"
                     >
                       <Trash2 className="w-3.5 h-3.5" />
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               );
