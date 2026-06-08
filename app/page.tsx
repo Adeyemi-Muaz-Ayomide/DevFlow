@@ -15,6 +15,8 @@ import Analytics from "./(app)/analytics/page";
 import GithubPage from "./(app)/Github/page";
 import Calendar from "./(app)/calendar/page";
 import Achievements from "./(app)/achievements/page";
+import CommandPalette from "./components/commandpalette";
+import { getCurrentUser } from "./lib/auth";
 
 export default function Page() {
   // const tasks = useAppStore((state) => state.tasks);
@@ -38,6 +40,15 @@ export default function Page() {
   const setMinutes = useAppStore((state) => state.setMinutes);
   const setSeconds = useAppStore((state) => state.setSeconds);
   const addXP = useAppStore((state) => state.addXP);
+  useEffect(() => {
+    async function checkUser() {
+      const user = await getCurrentUser();
+
+      console.log(user);
+    }
+
+    checkUser();
+  }, []);
   useEffect(() => {
     if (!isTimerActive) return;
 

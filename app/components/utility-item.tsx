@@ -22,7 +22,7 @@ const UtilityItems = () => {
     },
   ]);
   const [userLevel, setUserLevel] = useState(4);
-  const [currentTab, setCurrentTab] = useState<TabType>("dashboard");
+  // const [currentTab, setCurrentTab] = useState<TabType>("dashboard");
   return (
     <div className="flex items-center gap-3">
       {/* Direct Quick Info Badge */}
@@ -34,7 +34,7 @@ const UtilityItems = () => {
       {/* Notification bell center trigger */}
       <div className="relative" id="notification-bell-icon">
         <button
-          // onClick={() => setShowNotificationCenter(!showNotificationCenter)}
+          onClick={() => setShowNotificationCenter(!showNotificationCenter)}
           className="p-1.5 rounded-md hover:bg-neutral-900 text-gray-400 hover:text-white transition-colors cursor-pointer relative"
           title="Notifications panel"
         >

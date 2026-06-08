@@ -149,7 +149,7 @@ const KanbanBoard = () => {
       id="kanban-board-page"
     >
       {/* Board Header Actions */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-card-border pb-4">
+      <div className=" my-6 mx-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-card-border pb-4">
         <div>
           <h2 className="text-lg font-sans font-bold text-white tracking-tight flex items-center gap-2">
             Kanban Board /{" "}
@@ -173,7 +173,7 @@ const KanbanBoard = () => {
 
       {/* Columns Container */}
       <div
-        className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 overflow-x-auto pb-4 items-start"
+        className=" my-6 mx-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 overflow-x-auto pb-4 items-start"
         id="kanban-columns-scroller"
       >
         {columns.map((col) => {
